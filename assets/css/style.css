@@ -10,6 +10,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* apply styles to <header> */
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -22,7 +23,6 @@ header h1 {
   margin: 0;
   display: inline;
 }
-
 header a {
   text-decoration: none;
   color: #fce138;
@@ -72,21 +72,13 @@ section {
 
 /* Hero Style Start */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url('../images/hero-bg.jpg');
   height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 /* Hero Style End */
-
-.hero-form {
-  color: #024e76;
-  background: #fce138;
-  padding: 20px;
-  width: 500px;
-  border: solid 3px #024e76;
-}
 
 .hero-form {
   border: 3px solid #024e76;
@@ -99,11 +91,10 @@ section {
   right: 140px;
 }
 
-.hero-form h3{
+.hero-form h3 {
   font-size: 24px;
   margin: 0;
 }
-
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -147,28 +138,11 @@ section {
   background: #fce138;
 }
 
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
-  border-bottom: 3px solid;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
 .steps div {
-  margin-botom: 80px;
+  margin-bottom: 80px;
 }
 
-.steps img{
+.steps img {
   width: 15%;
   margin: 10px 0;
 }
@@ -188,6 +162,23 @@ section {
   font-size: 38px;
 }
 
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+
 .trainers {
   text-align: center;
 }
@@ -200,7 +191,6 @@ section {
   overflow: auto;
 }
 
-
 .trainer img {
   width: 35%;
   float: left;
@@ -210,14 +200,6 @@ section {
   padding: 35px;
   float: left;
   width: 65%;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .trainer-bio h3 {
@@ -234,6 +216,14 @@ section {
 .trainer-bio p {
   font-size: 17px;
   line-height: 1.3;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /* REACH OUT STYLES START */
@@ -265,7 +255,8 @@ section {
   font-size: 32px;
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 20px;
