@@ -1,16 +1,17 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-/* apply styles to <header> */
+
+/* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -21,10 +22,11 @@ header {
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
 }
+
 header a {
   text-decoration: none;
   color: #fce138;
@@ -35,26 +37,31 @@ header nav {
 }
 
 header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
 footer {
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -71,12 +78,14 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* Hero Style Start */
+/* HERO STYLES START */
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
@@ -84,8 +93,8 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start
 }
-/* Hero Style End */
 
 .hero-cta {
   width: 35%;
@@ -93,7 +102,7 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -108,7 +117,7 @@ section {
   padding: 20px;
   color: #024e76;
   width: 40%;
-  margin: 3.25%;
+  margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -126,7 +135,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -139,18 +148,45 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+} 
+/* HERO STYLES END */
+
+
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 48px;
+  border-bottom: 3px solid;
+  color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
 
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
-  font-size: 20px;
   margin: 0 auto;
+  font-size: 20px;
   text-align: center;
 }
+/* WHAT YOU DO STYLES END */
 
-.steps {
+
+/* WHAT YOU DO STYLES START */
+.steps { 
   background: #fce138;
 }
 
@@ -168,7 +204,7 @@ section {
 .step h3 {
   color: #024e76;
   font-size: 46px;
-  flex: 1 30%
+  flex: 1 30%;
 }
 
 .step-info {
@@ -191,7 +227,7 @@ section {
   flex: 12;
 }
 
-.steps-text p {
+.step-text p {
   color: #39a6b2;
   font-size: 18px;
 }
@@ -202,24 +238,9 @@ section {
   color: #024e76;
 }
 
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
+/* WHAT YOU DO STYLES END */
 
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
+/* MEET THE TRAINERS START */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -230,9 +251,9 @@ section {
 
 .trainer {
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -257,14 +278,7 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+/* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
 .contact {
@@ -275,8 +289,8 @@ section {
   color: #fce138;
 }
 
-.contact-info{
-  display:flex;
+.contact-info {
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -299,8 +313,7 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
@@ -332,8 +345,124 @@ section {
   color: #fce138;
 }
 
+
 /* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
 
 .flex-row {
   display: flex;
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+    
+  .hero-cta {
+   text-align: center;
+  }    
+  
+  .section-title {
+    width: 80%;
+  }
+  
+  .trainer {
+    flex: 0 70%;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+  .contact-form {
+    order: 3;
+  }
 }
